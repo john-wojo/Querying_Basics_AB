@@ -1,6 +1,6 @@
 #WHERE
 
-#Checking for customers who spent more than 3000 dollars
+#Checking for customers who are from Scranton
 SELECT * 
 FROM customers
-WHERE total_money_spent > 3000;
+WHERE city = 'Scranton';
