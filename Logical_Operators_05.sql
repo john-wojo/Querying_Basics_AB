@@ -10,3 +10,8 @@ where state = 'PA' and total_money_spent > 1000;
 select *
 from customers
 where state = 'PA' or total_money_spent > 1000;
+
+#Example of using parenthesis with logical operators
+select *
+from customers
+where (state = 'PA' or city = 'New York') and total_money_spent > 1000;
