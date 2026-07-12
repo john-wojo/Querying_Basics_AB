@@ -15,3 +15,8 @@ where state = 'PA' or total_money_spent > 1000;
 select *
 from customers
 where (state = 'PA' or city = 'New York') and total_money_spent > 1000;
+
+#Another example
+select * 
+from customers 
+where (state = 'PA' and total_money_spent > 1000) or birth_date > '1998-01-01';
